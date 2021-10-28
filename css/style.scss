@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Jost', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0px;
+}
+
+///code start
+
+.box{
+  margin: 100px auto;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  h1{
+    font-family: 'Rajdhani', sans-serif;
+  }
+}
+
+.animation:hover{
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes example {
+  0% {
+    border: 1px solid red;
+
+  }
+  25% {
+    border: 3px solid orange;
+
+  }
+  50% {
+    border: 5px solid purple;
+
+  }
+  75% {
+    border: 8px solid skyblue;
+  }
+  100% {
+    border: 11px solid skyblue;
+  }
+}
